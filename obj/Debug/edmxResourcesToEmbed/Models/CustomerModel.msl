@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="DemoCrudModelStoreContainer" CdmEntityContainer="DemoCrudEntities1">
+    <EntitySetMapping Name="Customers">
+      <EntityTypeMapping TypeName="DemoCrudModel.Customer">
+        <MappingFragment StoreEntitySet="Customer">
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CustomerName" ColumnName="CustomerName" />
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="ProductCode" ColumnName="ProductCode" />
+          <ScalarProperty Name="Mobileno" ColumnName="Mobileno" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="DemoCrudModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="Sid" ColumnName="Sid" />
+          <ScalarProperty Name="Cityname" ColumnName="Cityname" />
+          <ScalarProperty Name="Cityid" ColumnName="Cityid" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
